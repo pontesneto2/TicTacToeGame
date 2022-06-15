@@ -6,42 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/favicon.png" type="image/png" sizes="32x32">
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
-    <title>Play Tic Tac Toe</title>
+    <title>Jogue Jogo da Velha</title>
 </head>
 <body>
-        <div class="titleh">
-            <h1>Jogo da Velha</h1>
-            <h7>Divirta-se com o famoso Jogo da Velha</h7>
-        </div>
+    <div class="title">
+        <h1>Jogo da Velha</h1>
+    </div>
 
-        <div class='grid'>
-            <div class='space' id='one'></div>
-            <div class='space' id='two'></div>
-            <div class='space' id='three'></div>
-            <div class='space' id='four'></div>
-            <div class='space' id='five'></div>
-            <div class='space' id='six'></div>
-            <div class='space' id='seven'></div>
-            <div class='space' id='eight'></div>
-            <div class='space' id='nine'></div>
-          </div> 
+    <div class="sub-title">
+        <h7>Divirta-se!</h7>
+    </div>
 
-        <div class='flex'>
-            <div class='p1'>Jogador 1 : 0</div>
-            <div class='p2'>Jogador 2 : 0</div>
-          </div>
+    <div class="quadradotst">
+        <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+    
+    <div>
+        <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+    
+    <div>
+        <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
         
-        <div class='wrapper'>
-            <button class='reset'>Reset</button>
-        </div>
+    <div class="jogador">
+        <label>É a vez do jogador:</label>
+            <label id="jogador-selecionado">
+        </label>
+    </div>
+    
+    <div class="vencedor">
+        <label>O vencedor foi o jogador:</label>
+            <label id="vencedor-selecionado">
+        </label>
+    </div>
+    
+    <div>
+        <button onclick="reiniciar()">Reset</button>
+    </div>
 
-        <div class="footer">
-            <p>Desenvolvedor Pontes Neto</p>
-            <p>Linguagens utilizadas: HTML, CSS e JavaScript</p>
-            <p>Desafio proposto pelo Professor Carlos José do curso de Desenvolvimento Full Stack 
-                da Digital College.
-            </p>
-        </div>
+    <script src="velha.js"></script>
 </body>
+  <!-- <script src="velha.js"></script> -->
 </html>
