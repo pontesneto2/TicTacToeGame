@@ -10,27 +10,28 @@
     <title>Play Tic Tac Toe</title>
 </head>
 <body>
-    <main>
+        <h1>Jogo da Velha</h1>
+        <h7>Divirta-se com o famoso Jogo da Velha :)</h7>
         
-        <h1>Tic Tac Toe</h1>
-        <h7>Have fun and play the famous tic-tac-toe game :)</h7>
-        
-        <div class="container">
-            <div id="box1" onclick="boxClick()" class="box">X</div>
-            <div id="box2" onclick="boxClick()" class="box">O</div>
-            <div id="box3" onclick="boxClick()" class="box"></div>
-            <div id="box4" onclick="boxClick()" class="box"></div>
-            <div id="box5" onclick="boxClick()" class="box"></div>
-            <div id="box6" onclick="boxClick()" class="box"></div>
-            <div id="box7" onclick="boxClick()" class="box"></div>
-            <div id="box8" onclick="boxClick()" class="box"></div>
-            <div id="box9" onclick="boxClick()" class="box"></div>
-        </div>
-        
-        <section class="commands">
-            <button id="playAgain">Play Again</button>
-        </section>
+        <div class='grid'>
+            <div class='space' id='one'></div>
+            <div class='space' id='two'></div>
+            <div class='space' id='three'></div>
+            <div class='space' id='four'></div>
+            <div class='space' id='five'></div>
+            <div class='space' id='six'></div>
+            <div class='space' id='seven'></div>
+            <div class='space' id='eight'></div>
+            <div class='space' id='nine'></div>
+          </div> 
 
-    </main>
+        <div class='flex'>
+            <div class='p1'>Jogador 1: 0</div>
+            <div class='p2'>Jogador 2: 0</div>
+          </div>
+        
+        <div class='wrapper'>
+            <button class='reset'>Reset</button>
+        </div>
 </body>
 </html>
