@@ -12,6 +12,14 @@ body {
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(200,6,6,1) 100%);
 }
 
+.titleh{
+    font-family: 'Permanent Marker', sans-serif;
+    color: #FFF;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 30px;
+}
+
 .grid {
     background-color: rgba(0,0,0,.2);
     margin: 50px auto;
@@ -111,4 +119,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .footer{
+      color: #FFF;
   }
