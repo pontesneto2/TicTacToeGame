@@ -34,23 +34,23 @@
         <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
         <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
     </div>
+    <div class="info">    
+        <div class="jogador">
+            <label>É a vez do jogador:</label>
+                <label id="jogador-selecionado">
+            </label>
+        </div>
         
-    <div class="jogador">
-        <label>É a vez do jogador:</label>
-            <label id="jogador-selecionado">
-        </label>
+        <div class="vencedor">
+            <label>O vencedor da rodada foi:</label>
+                <label id="vencedor-selecionado">
+            </label>
+        </div>
+        
+        <div>
+            <button onclick="reiniciar()">Reset</button>
+        </div>
     </div>
-    
-    <div class="vencedor">
-        <label>O vencedor foi o jogador:</label>
-            <label id="vencedor-selecionado">
-        </label>
-    </div>
-    
-    <div>
-        <button onclick="reiniciar()">Reset</button>
-    </div>
-
     <script src="velha.js"></script>
 </body>
   <!-- <script src="velha.js"></script> -->
