@@ -99,9 +99,12 @@ function mudarVencedor(quadrado) {
 }
 
 function mudarCorQuadrado(quadrado1, quadrado2, quadrado3) {
-    quadrado1.style.background = '#0f0';
-    quadrado2.style.background = '#0f0';
-    quadrado3.style.background = '#0f0';
+    quadrado1.style.background = '#035FA9';
+    quadrado2.style.background = '#035FA9';
+    quadrado3.style.background = '#035FA9';
+    quadrado1.style.color = '#ffff00';
+    quadrado2.style.color = '#ffff00';
+    quadrado3.style.color = '#ffff00';
 }
 
 function checaSequencia(quadrado1, quadrado2, quadrado3) {
