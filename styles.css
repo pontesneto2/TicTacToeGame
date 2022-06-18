@@ -10,27 +10,27 @@ body {
 
 .title{
   font-family:'Fascinate';
-  font-size: 30px;
+  font-size: 40px;
   color: #73B6FC;
-  margin-top: -40px;
+  margin-top: -30px;
 }
 
 .sub-title{
   color: #FFF;
   font-family: 'Yanone Kaffeesatz';
-  font-size: 30px;
-  margin-left: 325px;
+  font-size: 28px;
+  margin-left: 280px;
   margin-top: -35px;
 }
 
 .quadrado {
   text-align: center;
-  width: 50px;
+  width: 45px;
   background: #eee;
   display: inline-block;
-  padding: 40px;
+  padding: 35px;
   font-size: 60px;
-  margin: 5px;
+  margin: 3px;
   cursor: pointer;
   color: #eee;
 }
@@ -89,8 +89,9 @@ Button:hover {
 .ass{
   color: #fff;
   font-size: 12px;
-  float: left;
+  float: center;
   font-family: helvetica, sans-serif;
+  margin-top: 25px;
 }
               
               
