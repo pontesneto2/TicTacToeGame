@@ -12,27 +12,31 @@ body {
   font-family:'Fascinate';
   font-size: 40px;
   color: #73B6FC;
-  margin-top: -30px;
+  margin-top: -50px;
+  margin-bottom: -60px;
 }
 
 .sub-title{
   color: #FFF;
   font-family: 'Yanone Kaffeesatz';
-  font-size: 28px;
-  margin-left: 280px;
+  font-size: 50px;
+  margin-left: 335px;
   margin-top: -35px;
+  margin-bottom: -75px;
 }
 
 .quadrado {
   text-align: center;
-  width: 45px;
+  width: 50px;
   background: #eee;
   display: inline-block;
-  padding: 35px;
-  font-size: 60px;
+  padding: 10px 50px 10px 40px;
+  font-size: 90px;
   margin: 3px;
   cursor: pointer;
   color: #eee;
+  font-family: 'Permanent Marker';
+  max-width: 100%;
 }
 
 .quadrado:hover {
@@ -46,8 +50,6 @@ body {
 }
 
 .jogador{
-  border-radius: 7px;
-  text-align: center;
   margin-top: 10px;
   letter-spacing: 1px;
 }
@@ -77,21 +79,21 @@ Button {
 	font-size:17px;
 	font-weight:bold;
 	padding:10px 44px;
-	text-decoration:none;
 	text-shadow:0px 1px 0px #528ecc;
   margin-top: 15px;
 }
+
 Button:hover {
 	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
 	background-color:#378de5;
 }
 
 .ass{
-  color: #fff;
-  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
   float: center;
   font-family: helvetica, sans-serif;
-  margin-top: 25px;
+  margin-top: 15px;
 }
               
               

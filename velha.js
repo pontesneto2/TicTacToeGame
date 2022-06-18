@@ -18,6 +18,7 @@ function escolherQuadrado(id) {
     quadrado.style.color = '#000';
 
     if (jogador === 'X') {
+        quadrado.style.color = 'red'
         jogador = 'O';
     } else {
         jogador = 'X';
