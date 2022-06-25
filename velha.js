@@ -1,31 +1,32 @@
-let jogador, vencedor = null;
-let jogadorSelecionado = document.getElementById('jogador-selecionado');
-let vencedorSelecionado = document.getElementById('vencedor-selecionado');
+let jogador, vencedor = null; //apontando p um obj inexistente (quadrado vazio)
+let jogadorSelecionado = document.getElementById('jogador-selecionado'); //trazendo do html as classes
+let vencedorSelecionado = document.getElementById('vencedor-selecionado'); //trazendo do html as classes
+//pra ser getElementByTagName teria que ser 'h1' div etc... e se for element's' teria q colocar [0]
 
-mudarJogador('X');
+mudarJogador('X'); //vez do jog inicial, começa c X.
 
-function escolherQuadrado(id) {
-    if (vencedor !== null) {
+function escolherQuadrado(id) { //em qq quadrado(id)
+    if (vencedor !== null) { //venced n igual a box vazio.
         return;
     }
 
     let quadrado = document.getElementById(id);
-    if (quadrado.innerHTML !== '-') {
+    if (quadrado.innerHTML !== '-') { //venced n igual a preenchido
         return;
     }
 
-    quadrado.innerHTML = jogador;
-    quadrado.style.color = '#000';
+    quadrado.innerHTML = jogador; //dzdo q quadrado se chama jogador
 
     if (jogador === 'X') {
-        quadrado.style.color = 'red'
-        jogador = 'O';
+        quadrado.style.color = 'red' //pintando de red X
+        jogador = 'O';//vez do prox jogador O
     } else {
-        jogador = 'X';
+        jogador = 'X'; //vez do jogador X
+        quadrado.style.color = 'blue' //pintando de blue O
     }
 
-    mudarJogador(jogador);
-    checaVencedor();
+    //mudarJogador(jogador);//chamada da funcao escolherQuadrado nas ID
+    checaVencedor();//chamada da função p checar se houve vencedor.
 }
 
 function mudarJogador(valor) {
@@ -99,7 +100,7 @@ function mudarVencedor(quadrado) {
     vencedorSelecionado.innerHTML = vencedor;
 }
 
-function mudarCorQuadrado(quadrado1, quadrado2, quadrado3) {
+function mudarCorQuadrado(quadrado1, quadrado2, quadrado3) { //vencedor
     quadrado1.style.background = '#035FA9';
     quadrado2.style.background = '#035FA9';
     quadrado3.style.background = '#035FA9';
@@ -125,9 +126,11 @@ function reiniciar() {
     for (let i = 1; i <= 9; i++) {
         let quadrado = document.getElementById(i);
 
-        quadrado.style.background = '#eee';
-        quadrado.style.color = '#eee';
-        quadrado.innerHTML = '-';
+        quadrado.style.background = '#eee';//pintando quad apos 1 rodada
+        quadrado.style.color = '#eee';//pintando cor apos 1 rodada
+        quadrado.innerHTML = '-';//pintando apos 1 rodada.
     }
     mudarJogador('X');
 }
+//estudar.
+//let map = array(9).fill('') criando um arrayl com 9 espaços vazios.
