@@ -127,12 +127,23 @@ Button:hover {
 	background-color:#378de5;
 }
 
-.ass{
-  color: rgb(0, 0, 0);
+/* #segundos {
+  position: absolute;
+  bottom: 0;
+  color: #000;
+  background-color: transparent;
+  font-size: 130%;
+  letter-spacing: 0.5px;
+  height: 38vh;
+} */
+
+.ass, a{
+  color: rgb(138, 138, 138);
   font-size: 13px;
   float: center;
   font-family: helvetica, sans-serif;
   margin-top: 15px;
+  text-decoration: none;
 }
               
               

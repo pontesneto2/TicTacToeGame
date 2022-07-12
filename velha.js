@@ -2,14 +2,6 @@ let jogador, vencedor = null; //apontando p um obj inexistente (quadrado vazio)
 let jogadorSelecionado = document.getElementById('jogador-selecionado'); //trazendo do html as classes
 let vencedorSelecionado = document.getElementById('vencedor-selecionado'); //trazendo do html as classes
 
-let btn = document.getElementById('initial');
-btn.addEventListener('click', mostra)
-//pra ser getElementByTagName teria que ser 'h1' div etc... e se for element's' teria q colocar [0]
-
-function mostra(){
-    btn.style.display = 'none';
-}
-
 mudarJogador('X'); //vez do jog inicial, começa c X.
 
 function escolherQuadrado(id) { //em qq quadrado(id)
@@ -139,7 +131,3 @@ function reiniciar() {
     }
     mudarJogador('X');
 }
-
-
-//estudar.
-//let map = array(9).fill('') criando um arrayl com 9 espaços vazios.
