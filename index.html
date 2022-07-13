@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/favicon.png" type="image/png" sizes="32x32">
-    <link rel="stylesheet" href="styles.css">
-    <title>Jogo da Velha!</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" sizes="32x32">
+        <link rel="stylesheet" href="styles.css">
+        <title>Jogo da Velha!</title>
+        <script src="velha.js" defer></script>
 </head>
 <body>
     <div class="title">
@@ -16,10 +17,6 @@
     <div class="sub-title">
         <h6>Divirta-se!</h6>
     </div>
-
-    <!-- <div id="initial" class="hidden">
-        <input type="button" value="START"/>
-    </div> -->
 
     <div class="quadradotst">
         <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div><!--Usando this p chamar e acessar o obj no id-->
@@ -40,12 +37,6 @@
     </div>
 
     <div class="info">    
-        <div class="jogador">
-            <label>É a vez do jogador:</label>
-                <label id="jogador-selecionado">
-            </label>
-        </div>
-        
         <div class="vencedor">
             <label>O vencedor da rodada foi...</label>
                 <label id="vencedor-selecionado">
@@ -56,13 +47,9 @@
             <button onclick="reiniciar()">Reset</button>
         </div>
     </div>
-    <script src="velha.js"></script>
-
-    <!-- <div id="segundos"></div> -->
 
     <div class="ass">
-        <p>Desenvolvido por <a href="https://github.com/pontesneto2">Pontes Neto</a></p>
+        <p>Desenvolvido por <a href="https://github.com/pontesneto2">Pontes Neto 🤟</a></p>
     </div>
 </body>
-  <!-- <script src="velha.js"></script> -->
 </html>
